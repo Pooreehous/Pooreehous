@@ -1,95 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-
-    <!-- Style sheet -->
-    <link rel="stylesheet" href="style.css">
-
-
-    <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&family=Grand+Hotel&display=swap"
-    rel="stylesheet">
-
-
-    <!-- font awesome -->
-    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>PooReeHous</title>
-</head>
-<body>
-    
-    <!--Header Section-->
-    <header class="header">
-        
-      <div class="banner">
-        <h2>Over One Hundred Dishes of </h2>
-        <h1>Maharashtrian <br>Cousine</h1>
-        <a class="btn banner-btn" href="#">explore</a>
-
+    <link rel="stylesheet" href="assets/hamburger.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="nav_left">
+        <img class="brand" src="assets/Logo.png" alt="" />
+        <a href="menu" class="nav_links">MENU</a>
+        <a class="nav_links">GALLERY</a>
+        <a class="nav_links">ABOUT US</a>
+        <a class="nav_links">CONTACT</a>
       </div>
-    </header>
-    <!-- Content divider -->
-    <div class="content-divider"></div>
-
-    <!--What we do-->
-    <section class="        "
-
-
-
-
-    <!-- skills section  -->
-    <section class="skills-section clearfix">
-
-      <!-- skill # 1 -->
-      <article class="skill">
-          <span class="skill-icon">
-              <i class="fas fa-mug-hot"></i>
+      <div class="nav_right">
+        <a href="" class="cta_button">ORDER NOW</a>
+      </div>
+      <div class="mobile-menu">
+        <button class="hamburger hamburger--collapse" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
           </span>
-          <h4>made in india</h4>
-          <p class="skill-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, reprehenderit.
-          </p>
-      </article>
-        
-      <!-- skill # 2 -->
-      <article class="skill">
-          <span class="skill-icon">
-              <i class="fas fa-glass-cheers"></i>
-          </span>
-          <h4>relaxation</h4>
-          <p class="skill-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, reprehenderit.
-          </p>
-      </article>
-
-      <!-- skill # 3 -->
-    <article class="skill">
-        <span class="skill-icon">
-            <i class="fas fa-bomb"></i>
-        </span>
-        <h4>energy</h4>
-        <p class="skill-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, reprehenderit.
-        </p>
-    </article>
-
-      <!-- skill # 4 -->        
-      <article class="skill">
-          <span class="skill-icon">
-              <i class="fas fa-mortar-pestle"></i>
-          </span>
-          <h4>family recipe</h4>
-          <p class="skill-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, reprehenderit.
-          </p>
-      </article>
+        </button>
+        <img class="brand" src="assets/Logo.png" alt="" />
+      </div>
+      <div class="mobile-menu--open">
+        <a href="menu" class="nav_links">MENU</a>
+        <a class="nav_links">GALLERY</a>
+        <a class="nav_links">ABOUT US</a>
+        <a class="nav_links">CONTACT</a>
+        <a href="" class="cta_button">ORDER NOW</a>
+      </div>
+    </nav>
+    <!-- home -->
+    <img class="bg-leaf" src="assets/leaves.png" alt="" />
+    <section id="home" class="home">
+      <div class="home_left">
+        <div class="orange-title">Pandhare Special</div>
+        <div class="title">PooReeHous</div>
+        <div class="subtitle">
+          Lorem ipsum dolor sit amet consectetur adipisicing molestiae quas vel
+          sint commodi repudiandae consequuntur voluptatum laborum
+        </div>
+        <a href="" class="cta_button home_button">ORDER NOW</a>
+      </div>
+      <div class="home_right">
+        <img
+          class="hero_image"
+          src="https://cdn.discordapp.com/attachments/902774384157151272/939154629525143572/unknown.png"
+          alt=""
+        />
+      </div>
     </section>
+    <!-- <hr class="divider" /> -->
+    <section class="card_container">
+      <div class="card" onclick="toggleCard(this)">
+        <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+        <i class="ri-phone-line"></i>
 
-</body>   
-</html>     
+        <div class="card_content">
+          <div class="card_title">Call & Place Order</div>
+          <div class="card_desc">
+            Call on the numbers at the bottom of the page or contact us on
+            whatsapp
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+        <lord-icon
+          src="https://cdn.lordicon.com/itmmouju.json"
+          trigger="loop"
+          colors="primary:#18181a,secondary:#f57500"
+          stroke="70"
+        >
+        </lord-icon>
+        <div class="card_content">
+          <div class="card_title">Preparation</div>
+          <div class="card_desc">
+            We will start preparing your order whenever you need it
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <lord-icon
+          src="https://cdn.lordicon.com/poblyvkl.json"
+          trigger="loop"
+          colors="primary:#18181a,secondary:#f57500"
+          stroke="80"
+        >
+        </lord-icon>
+        <div class="card_content">
+          <div class="card_title">Delivery</div>
+          <div class="card_desc">
+            The order will be delivered to your doorstep on the day you want it
+            to
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+        <lord-icon
+          src="https://cdn.lordicon.com/stbcbpfl.json"
+          trigger="loop"
+          colors="primary:#18181a,secondary:#f57500"
+          stroke="100"
+        >
+        </lord-icon>
+        <div class="card_content">
+          <div class="card_title">Bon Apetit</div>
+          <div class="card_desc">
+            Relax and enjoy your order
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section2 -->
+    <section id="about" class="about">
+      <div class="about_left_image">
+        <img
+          src="https://cdn.discordapp.com/attachments/902774384157151272/941298514976210944/unknown.png"
+          alt=""
+        />
+      </div>
+      <div class="about_right">
+        <div class="about_title">Meet the Chef</div>
+        <img class="chef_image" src="assets/DSC_6511.JPG" />
+        <div class="about_subtitle">
+          Myself <span style="color: #f57500;">Sonali</span> Nitin Pandhare
+        </div>
+        <div class="about_description">
+          I am an Engineer. Me and my family once went to the food truck
+          festival ,where we found that almost all stall s were serving non veg.
+          There were hardly 1-2 stalls of veg food..We are pure vegetarians so
+          hardly had anything to eat there , that day was when the PoReeHouse
+          was born in my Husband's mind..and we immediately executed it. We
+          started to keep
+        </div>
+      </div>
+    </section>
+    <section class="menu">
+      <div class="about_title">
+        MENU
+      </div>
+      <div class="carausel">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="about_title">Meet the Chef</div>
+              <img class="image_slider" src="assets/DSC_3984.JPG" />
+            </div>
+            <div class="swiper-slide">
+              <div class="about_title">Meet the Chef</div>
+              <img class="image_slider" src="assets/DSC_4022.JPG" />
+            </div>
+            <div class="swiper-slide">
+              <div class="about_title">Meet the Chef</div>
+              <img class="image_slider" src="assets/DSC_4174.JPG" />
+            </div>
+            <div class="swiper-slide">
+              <div class="about_title">Meet the Chef</div>
+              <img class="image_slider" src="assets/DSC_4196.JPG" />
+            </div>
+            <div class="swiper-slide">
+              <div class="about_title">Meet the Chef</div>
+              <img class="image_slider" src="assets/DSC_4301.JPG" />
+            </div>
+            <div class="swiper-slide">
+              <div class="about_title">Meet the Chef</div>
+              <img
+                class="image_slider"
+                src="https://swiperjs.com/demos/images/nature-6.jpg"
+              />
+            </div>
+            <div class="swiper-slide">
+              <div class="about_title">Meet the Chef</div>
+              <img
+                class="image_slider"
+                src="https://swiperjs.com/demos/images/nature-7.jpg"
+              />
+            </div>
+            <div class="swiper-slide">
+              <div class="about_title">Meet the Chef</div>
+              <img
+                class="image_slider"
+                src="https://swiperjs.com/demos/images/nature-8.jpg"
+              />
+            </div>
+            <div class="swiper-slide">
+              <div class="about_title">Meet the Chef</div>
+              <img
+                class="image_slider"
+                src="https://swiperjs.com/demos/images/nature-9.jpg"
+              />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <section class="contacts about">
+      <div class="about_left_image">
+        <img
+          src="https://cdn.discordapp.com/attachments/902774384157151272/941298514976210944/unknown.png"
+          alt=""
+        />
+      </div>
+      <div class="about_right">
+        <div class="about_title">Contacts</div>
+        <hr />
+        <div class="about_description">
+          Conatact us in a convenient way
+        </div>
+        <div class="about_subtitle">
+          <span style="color: #f57500;">Phone</span>
+        </div>
+
+        <div class="about_description">
+          <i class="ri-phone-line"></i>+91-9819425179 <br />
+          <i class="ri-whatsapp-line"></i>+91-8928634376
+        </div>
+        <div class="about_subtitle">
+          <span style="color: #f57500;">Email</span>
+        </div>
+
+        <div class="about_description">
+          <i class="ri-mail-line"></i>pooreehous@gmail.com
+        </div>
+      </div>
+    </section>
+    <hr />
+    <footer>
+      <div class="footer_top">
+        <img width="40" height="40" src="assets/Logo.png" alt="" />
+        <span class="about_title">PooreHouse</span>
+      </div>
+      <div class="footer_bottom">
+        <div class="footer_links">
+          <a class="nav_links" href="">Home</a>
+          <a class="nav_links" href="">Home</a>
+          <a class="nav_links" href="">Home</a>
+          <a class="nav_links" href="">Home</a>
+        </div>
+        <div class="footer_address">
+          <div class="about_subtitle">Address</div>
+          <div class="about_description">
+            molestiae quas vel sint commodi repudiandae consequuntur voluptatum
+            laborum
+          </div>
+        </div>
+        <div class="footer_contact">
+          <div class="about_subtitle">Contact Us</div>
+          <i class="ri-phone-line"></i>+91-9819425179 <br />
+          <i class="ri-phone-line"></i>+91-8928634376
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true
+        },
+        autoplay: {
+          delay: 1000
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        }
+      });
+    </script>
+    <script src="main.js"></script>
+    <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+  </body>
+</html>
